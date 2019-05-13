@@ -1,0 +1,15 @@
+{
+  "name": "automattic/jetpack-standards",
+  "description": "Adds basic Jetpack standards to a project.",
+  "license": "GPL-2.0-or-later",
+  "type": "composer-plugin",
+  "require": {
+    "composer-plugin-api": "^1.1"
+  },
+  "autoload": {
+    "psr-4": {"Automattic\\Jetpack\\Standards\\": ""}
+  },
+  "extra": {
+    "class": "Automattic\\Jetpack\\Standards\\PostInstall"
+  }
+}
