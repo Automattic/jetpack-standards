@@ -56,7 +56,7 @@ class PostInstall implements PluginInterface, EventSubscriberInterface {
 		}
 		// Make destination directory
 		if ( ! is_dir( $dest ) ) {
-			mkdir( $dest, $permissions );
+			mkdir( $dest );
 		}
 		// Loop through the folder
 		$dir = dir( $source );
