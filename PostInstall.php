@@ -30,12 +30,13 @@ class PostInstall implements PluginInterface, EventSubscriberInterface {
 	}
 
 	/**
-	 * Copies standards from this plugin to the root directory of the included projects.
+	 * Copies standards and GitHub templates from this plugin to the root directory of the included projects.
 	 *
 	 * Currently assumes that this file is at the third level of root.
 	 */
 	public static function post_install() {
-		self::xcopy( ( __DIR__ ) . '/standards', dirname( dirname( dirname( __DIR__  ) ) ) );
+		self::xcopy( ( __DIR__ ) . '/standards', dirname( dirname( dirname( __DIR__ ) ) ) );
+		self::xcopy( ( __DIR__ ) . '/github', dirname( dirname( dirname( __DIR__ ) ) ) . '/.github' );
 	}
 
 	/**
@@ -55,7 +56,7 @@ class PostInstall implements PluginInterface, EventSubscriberInterface {
 		}
 		// Make destination directory
 		if ( ! is_dir( $dest ) ) {
-			mkdir( $dest, $permissions );
+			mkdir( $dest );
 		}
 		// Loop through the folder
 		$dir = dir( $source );
