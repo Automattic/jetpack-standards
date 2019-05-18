@@ -37,6 +37,7 @@ class PostInstall implements PluginInterface, EventSubscriberInterface {
 	public static function post_install() {
 		self::xcopy( ( __DIR__ ) . '/standards', dirname( dirname( dirname( __DIR__ ) ) ) );
 		self::xcopy( ( __DIR__ ) . '/github', dirname( dirname( dirname( __DIR__ ) ) ) . '/.github' );
+		self::xcopy( ( __DIR__ ) . '/bin', dirname( dirname( dirname( __DIR__ ) ) ) . '/bin' );
 	}
 
 	/**
