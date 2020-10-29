@@ -6,7 +6,7 @@
   "require": {
     "composer-plugin-api": "^1.1",
     "dealerdirect/phpcodesniffer-composer-installer": "0.7.0",
-    "wp-coding-standards/wpcs": "2.1.1",
+    "wp-coding-standards/wpcs": "2.3.0",
     "sirbrillig/phpcs-variable-analysis": "2.6.4",
     "phpcompatibility/phpcompatibility-wp": "2.0.0"
   },
