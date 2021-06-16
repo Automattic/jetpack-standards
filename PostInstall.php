@@ -30,6 +30,30 @@ class PostInstall implements PluginInterface, EventSubscriberInterface {
 	}
 
 	/**
+	 * Remove any hooks from Composer.
+	 *
+	 * Unused. Intended for changing Composer internals, which we don't need.
+	 *
+	 * @param Composer    $composer
+	 * @param IOInterface $io
+	 */
+	public function deactivate(Composer $composer, IOInterface $io) {
+	}
+
+	/**
+	 * Prepare the plugin to be uninstalled.
+	 *
+	 * This will be called after deactivate.
+	 *
+	 * Unused. Intended for changing Composer internals, which we don't need.
+	 *
+	 * @param Composer    $composer
+	 * @param IOInterface $io
+	 */
+	public function uninstall(Composer $composer, IOInterface $io) {
+	}
+
+	/**
 	 * Copies standards and GitHub templates from this plugin to the root directory of the included projects.
 	 *
 	 * Currently assumes that this file is at the third level of root.
