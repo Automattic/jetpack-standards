@@ -6,5 +6,19 @@
     "allow_squash_merge": true,
     "allow_merge_commit": false,
     "allow_rebase_merge": false
-  }
+  },
+  "branches": [
+    {
+      "name": "master",
+      "required_status_checks": null,
+      "enforce_admins": true,
+      "required_pull_request_reviews": {
+        "dismissal_restrictions": {},
+        "dismiss_stale_reviews": true,
+        "require_code_owner_reviews": false,
+        "required_approving_review_count": 1
+      },
+      "restrictions": null
+    }
+  ]
 }
