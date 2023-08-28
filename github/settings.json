@@ -9,7 +9,7 @@
   },
   "branches": [
     {
-      "name": "master",
+      "name": "trunk",
       "required_status_checks": null,
       "enforce_admins": true,
       "required_pull_request_reviews": {
